@@ -107,6 +107,7 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -178,11 +179,9 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background: linear-gradient(to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
@@ -193,11 +192,9 @@
     inset: auto 0 0;
     padding: 2rem;
     height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
 }
@@ -223,6 +220,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }
@@ -241,8 +239,8 @@
 
 
 
-.intro{
-  border: 2px solid white;
+.intro {
+  /* border: 2px solid white; */
   padding: 40px 23px 40px 26px;;
   display: flex;
   flex-direction: column;
@@ -254,15 +252,66 @@
   background-color: #1e1e1f;
 }
 
+.intro h1 {
+  margin-top: 20px;
+}
 
-.iconText{
+
+.iconText {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
+  text-align: start;
+  gap: 25px;
+}
+
+.iconText svg {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #1e1e1f;
+  box-shadow: 0px 1px 7px 1px #0e0e0e;
+}
+
+.text p{
+  color: rgb(185 182 182);
+}
+
+.container{
+  background-color: #1e1e1f;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.container p{
+  margin-top: 20px;
+  line-height: 23px;
+}
+
+.containerItems{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 25px;
 
 }
 
-.iconText svg{
-  width: 60px;
-  height: 60px;
+.cntainerChild{
+  background-color: #1e1e1f;
+  box-shadow: 0px 1px 7px 1px #0e0e0e;  border-radius: 15px;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.cntainerChild p{
+  margin-top: 5px;
+}
+
+.skills svg {
+width: 150px;
+height: 150px;
 }
