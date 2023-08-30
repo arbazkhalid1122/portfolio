@@ -16,8 +16,8 @@ import Portfolio from './pages/portfolio/portfolio'
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
-  const [showResume, setShowResume] = useState(true);
-  const [showPortfolio, setShowPortfolio] = useState(true);
+  const [showResume, setShowResume] = useState(false);
+  const [showPortfolio, setShowPortfolio] = useState(false);
 
   const handleAbout = () => {
     setShowAbout(true);
