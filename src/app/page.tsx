@@ -39,21 +39,32 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.content}> 
+        <div className={styles.nav2}>
+            <div onClick={handleAbout} style={{ cursor: 'pointer' }}>About</div>
+
+            <div style={{ cursor: 'pointer' }} onClick={handleResume}>
+              Resume
+            </div>
+
+            <div style={{ cursor: 'pointer' }} onClick={handlePortfolio}>
+              Portfolio
+            </div>
+          </div>
+      <div className={styles.content}>
         <Intro></Intro>
         <div className={styles.container}>
-          <div style={{ display: 'flex', gap: '100px', background: 'rgb(60 60 61)', position: 'absolute', right: '85px', marginTop: '-38px', padding: '20px', fontSize: '20px'}}>
-        <div onClick={handleAbout} style={{ cursor: 'pointer' }}>About</div>
+          <div  className={styles.nav1}>
+            <div onClick={handleAbout} style={{ cursor: 'pointer' }}>About</div>
 
-        <div style={{ cursor: 'pointer' }} onClick={handleResume}>
-          Resume
-        </div>
+            <div style={{ cursor: 'pointer' }} onClick={handleResume}>
+              Resume
+            </div>
 
-        <div style={{ cursor: 'pointer' }} onClick={handlePortfolio}>
-          Portfolio
-        </div>
-          </div>{ showAbout &&
-            <div style={{marginTop:'40px'}}>
+            <div style={{ cursor: 'pointer' }} onClick={handlePortfolio}>
+              Portfolio
+            </div>
+          </div>{showAbout &&
+            <div style={{ marginTop: '40px' }}>
               <div style={{ position: 'relative' }}>
                 <h1>About Me</h1>
                 <p style={{ color: 'rgb(185 182 182)' }}>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
@@ -116,12 +127,12 @@ export default function Home() {
                 </div>
               </div>
             </div>}
-          { showResume &&
+          {showResume &&
             <Resume></Resume>
           }
           {
-            showPortfolio && 
-            <Portfolio/>
+            showPortfolio &&
+            <Portfolio />
           }
         </div>
       </div>

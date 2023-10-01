@@ -1,4 +1,3 @@
-import styles from '../../page.module.css';
 import project from '../../../../public/projct.jpg';
 import Image from 'next/image';
 import { styled } from 'styled-components';
