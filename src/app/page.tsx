@@ -11,8 +11,9 @@ import Image from 'next/image'
 import Next from '.././../public/next.svg'
 import { useState } from 'react'
 import Intro from './pages/intro'
-import Resume from './pages/Resume/page'
+import Resume from './pages/Resume/resume'
 import Portfolio from './pages/portfolio/portfolio'
+
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
