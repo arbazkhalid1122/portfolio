@@ -41,13 +41,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
         <div className={styles.nav2}>
-            <div onClick={handleAbout} style={{ cursor: 'pointer' }}>About</div>
+            <div onClick={handleAbout} style={{ cursor: 'pointer' }} className={styles.navItem}>About</div>
 
-            <div style={{ cursor: 'pointer' }} onClick={handleResume}>
+            <div style={{ cursor: 'pointer' }} className={styles.navItem} onClick={handleResume}>
               Resume
             </div>
 
-            <div style={{ cursor: 'pointer' }} onClick={handlePortfolio}>
+            <div style={{ cursor: 'pointer' }} className={styles.navItem} onClick={handlePortfolio}>
               Portfolio
             </div>
           </div>
@@ -55,21 +55,21 @@ export default function Home() {
         <Intro></Intro>
         <div className={styles.container}>
           <div  className={styles.nav1}>
-            <div onClick={handleAbout} style={{ cursor: 'pointer' }}>About</div>
+            <div onClick={handleAbout} className={styles.navItem} style={{ cursor: 'pointer',color:showAbout ? '#FFDB70':'' }}>About</div>
 
-            <div style={{ cursor: 'pointer' }} onClick={handleResume}>
+            <div style={{ cursor: 'pointer',color:showResume ? '#FFDB70':''  }} className={styles.navItem} onClick={handleResume}>
               Resume
             </div>
 
-            <div style={{ cursor: 'pointer' }} onClick={handlePortfolio}>
+            <div style={{ cursor: 'pointer',color:showPortfolio ? '#FFDB70':''  }} className={styles.navItem} onClick={handlePortfolio}>
               Portfolio
             </div>
           </div>{showAbout &&
             <div style={{ marginTop: '40px' }}>
-              <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative'}}>
                 <h1>About Me</h1>
-                <p style={{ color: 'rgb(185 182 182)' }}>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-                  My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+                <p style={{ color: 'rgb(185 182 182)' }}>I'm Creative Director and UI/UX Designer from Bahawalpur, Pakistan, working in web development. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                  My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.
                 </p>
               </div>
               <div style={{ marginTop: '30px' }}>
@@ -78,15 +78,15 @@ export default function Home() {
                   <div className={styles.cntainerChild}>
                     <div><Image src={design} height={50} width={50} alt='' /></div>
                     <div>
-                      <h2>Email</h2>
+                      <h2>Web Design</h2>
                       <p>The most modern and high-quality design made at a professional level.</p>
                     </div>
                   </div>
                   <div className={styles.cntainerChild}>
-                    <div><Image src={design} height={50} width={50} alt='' /></div>
+                    <div><Image src='http://127.0.0.1:5500/assets/images/icon-dev.svg' height={50} width={50} alt='' /></div>
                     <div>
-                      <h2>Email</h2>
-                      <p>The most modern and high-quality design made at a professional level.</p>
+                      <h2>Web Development</h2>
+                      <p>High-quality development of sites at the professional level.</p>
                     </div>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export default function Home() {
               <div style={{ marginTop: '30px' }}>
                 <h1>Skills</h1>
                 <div style={{ marginTop: '15px' }}>
-                  <div style={{ textAlign: 'center', display: 'flex', gap: '40px', overflow: 'auto' }} className={styles.skillsItem}>
+                  <div className={styles.skillsItem}>
                     <div className={styles.skills} style={{ color: '#f6d36b' }}>
                       <RiJavascriptFill />
                       <h2>JavaScript</h2>

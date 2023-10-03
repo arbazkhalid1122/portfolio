@@ -9,12 +9,12 @@ import { SiAntdesign, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons
 import Next from '.././../../../public/next.svg'
 import Image from 'next/image'
 
-function Resume(props:any) {
+function Resume(props: any) {
 
-    
+
     return (
         <div className={styles.resume}>
-            <div>
+            <div style={{ marginTop: '30px' }}>
                 <h1>Resume</h1>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '30px' }} className={styles.resumeHead}>
                     <div>
@@ -27,16 +27,28 @@ function Resume(props:any) {
                 <div className={styles.education}>
                     <Timeline className={styles.timeline}>
                         <Timeline.Item>
-                            <h3 style={{ color: 'white' }}>University School Of The Arts</h3>
-                            <p style={{ marginTop: '2px', color: 'hsl(0deg 0.42% 46.86%)' }}>
-                                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+                            <h3 style={{ color: 'white' }}>Islamia University of Bahawalpur</h3>
+                            <span style={{ color: '#FFDB70' }}>2018 - 2022</span>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                                Bachelor of Science in Software Engineering
                             </p>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <h3 style={{ color: 'white' }}>Another University</h3>
-                            <p style={{ marginTop: '2px', color: 'hsl(0deg 0.42% 46.86%)' }}>
-                                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+
+                            <p style={{ marginTop: '10px', color: '#d6d5d5' }}>
+                                During my time at Islamia University of Bahawalpur, I gained a solid foundation in software engineering principles, computer science concepts, and programming languages. My coursework and projects allowed me to develop the following skills and experiences:
                             </p>
+
+                            <ul style={{ listStyleType: 'square', marginLeft: '20px', marginTop: '10px', color: '#d6d5d5' }}>
+                                <li>Proficiency in various programming languages such as Java, C++, and Python.</li>
+                                <li>Hands-on experience in software development methodologies including Agile and Scrum.</li>
+                                <li>Strong problem-solving and analytical skills in designing and implementing software solutions.</li>
+                                <li>Collaboration with peers on group projects, enhancing teamwork and communication abilities.</li>
+                                <li>Adaptability to rapidly evolving technologies and a commitment to staying up-to-date with industry trends.</li>
+                            </ul>
+
+                            <p style={{ marginTop: '10px', color: '#d6d5d5' }}>
+                                I am now eager to apply my knowledge and skills as a software engineer in a dynamic and innovative team, where I can contribute to the development of cutting-edge software solutions and continue to grow in my career.
+                            </p>
+
                         </Timeline.Item>
                     </Timeline>
                 </div>
@@ -54,13 +66,13 @@ function Resume(props:any) {
                     <Timeline className={styles.timeline}>
                         <Timeline.Item>
                             <h3 style={{ color: 'white' }}>InternShip</h3>
-                            <p style={{ marginTop: '2px', color: 'hsl(0deg 0.42% 46.86%)' }}>
-                                Six month Internship in Codelab
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                                Six month Internship in Code Lab
                             </p>
                         </Timeline.Item>
                         <Timeline.Item>
                             <h3 style={{ color: 'white' }}>Enigmatix</h3>
-                            <p style={{ marginTop: '2px', color: 'hsl(0deg 0.42% 46.86%)' }}>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
                                 Two Years Experience as a Frontend developer in Enigmatix
                             </p>
                         </Timeline.Item>
@@ -80,13 +92,13 @@ function Resume(props:any) {
                     <Timeline className={styles.timeline}>
                         <Timeline.Item>
                             <h3 style={{ color: 'white' }}>OMS</h3>
-                            <p style={{ marginTop: '2px', color: 'hsl(0deg 0.42% 46.86%)' }}>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
                                 Six month work on OMS (office managment system)
                             </p>
                         </Timeline.Item>
                         <Timeline.Item>
                             <h3 style={{ color: 'white' }}>Templates</h3>
-                            <p style={{ marginTop: '2px', color: 'hsl(0deg 0.42% 46.86%)' }}>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
                                 One year
                             </p>
                         </Timeline.Item>
@@ -98,7 +110,7 @@ function Resume(props:any) {
             <div style={{ marginTop: '30px' }}>
                 <h1>Skills</h1>
                 <div style={{ marginTop: '15px' }} className={styles.skillsItem}>
-                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px', overflowX: 'auto' }} >
+                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px',flexWrap:'wrap' }} >
                         <div className={styles.skills2} style={{ color: '#f6d36b' }}>
                             <RiJavascriptFill />
                             <h5>JavaScript</h5>
@@ -123,8 +135,8 @@ function Resume(props:any) {
                             <Image src={Next} width={50} height={50} alt='' style={{ background: 'white', borderRadius: '30pc', padding: '5px' }} />
                             <h5 style={{ color: 'white' }}>Next Js</h5>
                         </div>
-                    </div>
-                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px', overflowX: 'auto' }}>
+                    {/* </div>
+                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px', overflowX: 'auto' }}> */}
                         <div style={{ color: '#00ba4a' }} className={styles.skills2}>
                             <SiTypescript />
                             <h5>Typescript</h5>

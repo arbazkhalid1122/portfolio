@@ -37,34 +37,38 @@ const ImageCaption = styled.p`
   text-align: center;
 `;
 
+
 function Portfolio() {
   return (
+    <div>
+      <h1 style={{marginTop:'30px'}}>Portfolio</h1>
     <ImageSet>
       <ImageContainer>
         <Image src={project} layout="responsive" height={250} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <Image src={project} layout="responsive" height={250} width={250} alt='' />
+        <img src={'http://127.0.0.1:5500/assets/images/project-1.jpg'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <Image src={project} layout="responsive" height={250} width={250} alt='' />
+        <img src={'http://127.0.0.1:5500/assets/images/project-3.jpg'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <Image src={project} layout="responsive" height={250} width={250} alt='' />
+        <img src={'http://127.0.0.1:5500/assets/images/project-4.png'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <Image src={project} layout="responsive" height={250} width={250} alt='' />
+        <img src={'http://127.0.0.1:5500/assets/images/project-5.png'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <Image src={project} layout="responsive" height={250} width={250} alt='' />
+        <img src={'http://127.0.0.1:5500/assets/images/project-7.png'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
     </ImageSet>
+    </div>
   );
 }
 

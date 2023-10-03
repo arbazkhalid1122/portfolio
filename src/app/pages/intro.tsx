@@ -2,7 +2,7 @@ import styles from '../page.module.css'
 import { MdOutlineMailOutline } from 'react-icons/md'
 import { VscLocation } from 'react-icons/vsc'
 import { SlCalender, SlScreenSmartphone } from 'react-icons/sl'
-import avatar from '.././../../public/my-avatar.png'
+import avatar from '.././../../public/myImg.jpeg'
 import Image from 'next/image'
 
 
