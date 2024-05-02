@@ -83,7 +83,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.cntainerChild}>
-                    <div><Image src='http://127.0.0.1:5500/assets/images/icon-dev.svg' height={50} width={50} alt='' /></div>
+                    <div><Image src={design} height={50} width={50} alt='' /></div>
                     <div>
                       <h2>Web Development</h2>
                       <p>High-quality development of sites at the professional level.</p>

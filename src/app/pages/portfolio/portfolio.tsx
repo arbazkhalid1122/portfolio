@@ -48,14 +48,14 @@ function Portfolio() {
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <img src={'http://127.0.0.1:5500/assets/images/project-1.jpg'} height={200} width={250} alt='' />
-        <ImageCaption>Your Image Caption Here</ImageCaption>
+        <img src={'https://www.istockphoto.com/essential/vector/dashboard-great-design-for-any-site-purposes-business-infographic-template-vector-gm1309831153-399425704'} height={200} width={250} alt='' />
+        <ImageCaption>Admin Dashboard</ImageCaption>
       </ImageContainer>
       <ImageContainer>
-        <img src={'http://127.0.0.1:5500/assets/images/project-3.jpg'} height={200} width={250} alt='' />
-        <ImageCaption>Your Image Caption Here</ImageCaption>
+        <img src={'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdigitalead.com%2Fe-commerce-development-service%2F&psig=AOvVaw3x4_LWYa1KoAAtvPo8U_Dz&ust=1714748570599000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLiqlLSe74UDFQAAAAAdAAAAABAJ'} height={200} width={250} alt='' />
+        <ImageCaption>eCommerce</ImageCaption>
       </ImageContainer>
-      <ImageContainer>
+      {/* <ImageContainer>
         <img src={'http://127.0.0.1:5500/assets/images/project-4.png'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
       </ImageContainer>
@@ -66,7 +66,7 @@ function Portfolio() {
       <ImageContainer>
         <img src={'http://127.0.0.1:5500/assets/images/project-7.png'} height={200} width={250} alt='' />
         <ImageCaption>Your Image Caption Here</ImageCaption>
-      </ImageContainer>
+      </ImageContainer> */}
     </ImageSet>
     </div>
   );
