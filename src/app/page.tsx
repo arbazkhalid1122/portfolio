@@ -85,7 +85,7 @@ export default function Home() {
                   <div className={styles.cntainerChild}>
                     <div><Image src={design} height={50} width={50} alt='' /></div>
                     <div>
-                      <h2>Web Development</h2>
+                      <h2>Mobile Development</h2>
                       <p>High-quality development of sites at the professional level.</p>
                     </div>
                   </div>
