@@ -91,16 +91,34 @@ function Resume(props: any) {
                 <div className={styles.education}>
                     <Timeline className={styles.timeline}>
                         <Timeline.Item>
-                            <h3 style={{ color: 'white' }}>OMS</h3>
+                            <h3 style={{ color: 'white' }}>E-commerce</h3>
                             <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                                Six month work on OMS (office managment system)
+                                Developed an E-commerce website with React and Node js
                             </p>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <h3 style={{ color: 'white' }}>Templates</h3>
-                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                                One year
-                            </p>
+                        </Timeline.Item>    
+                    <Timeline.Item>
+                        <h3 style={{ color: 'white' }}>OMS</h3>
+                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                            Worked for six months on OMS (Office Management System)
+                        </p>
+                    </Timeline.Item>
+                    <Timeline.Item>
+                        <h3 style={{ color: 'white' }}>Templates</h3>
+                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                            Developed various templates such as Ecommerce and Real-Estate
+                        </p>
+                    </Timeline.Item>
+                    <Timeline.Item>
+                        <h3 style={{ color: 'white' }}>Club Management System</h3>
+                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                            Developed a Football and Swimming Club Management System, including team, player, coach, membership, and match management functionalities
+                        </p>
+                    </Timeline.Item>
+                    <Timeline.Item>
+                        <h3 style={{ color: 'white' }}>Social App</h3>
+                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                            Created an app similar to Instagram
+                        </p>
                         </Timeline.Item>
                     </Timeline>
                 </div>
