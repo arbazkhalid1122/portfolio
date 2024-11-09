@@ -28,7 +28,7 @@ function Resume(props: any) {
                     <Timeline className={styles.timeline}>
                         <Timeline.Item>
                             <h3 style={{ color: 'white' }}>Islamia University of Bahawalpur</h3>
-                            <span style={{ color: '#FFDB70' }}>2018 - 2022</span>
+                            <span style={{ color: '#FFDB70' }}>2021 - Present</span>
                             <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
                                 Bachelor of Science in Software Engineering
                             </p>
@@ -67,7 +67,7 @@ function Resume(props: any) {
                         <Timeline.Item>
                             <h3 style={{ color: 'white' }}>InternShip</h3>
                             <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                                Six month Internship in Code Lab
+                                Eight month Internship in Enigmatix
                             </p>
                         </Timeline.Item>
                         <Timeline.Item>
@@ -126,7 +126,7 @@ function Resume(props: any) {
                 </div>
             </div>
             <div style={{ marginTop: '30px' }}>
-                <h1>Skills</h1>
+            <h1>Skills <span style={{ fontWeight: 'normal', fontSize: 'small' }}>(Skills i remember)</span></h1>
                 <div style={{ marginTop: '15px' }} className={styles.skillsItem}>
                     <div style={{ textAlign: 'center', display: 'flex', gap: '30px',flexWrap:'wrap' }} >
                         <div className={styles.skills2} style={{ color: '#f6d36b' }}>
