@@ -95,30 +95,30 @@ function Resume(props: any) {
                             <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
                                 Developed an E-commerce website with React and Node js
                             </p>
-                        </Timeline.Item>    
-                    <Timeline.Item>
-                        <h3 style={{ color: 'white' }}>OMS</h3>
-                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                            Worked for six months on OMS (Office Management System)
-                        </p>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <h3 style={{ color: 'white' }}>Templates</h3>
-                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                            Developed various templates such as Ecommerce and Real-Estate
-                        </p>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <h3 style={{ color: 'white' }}>Club Management System</h3>
-                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                            Developed a Football and Swimming Club Management System, including team, player, coach, membership, and match management functionalities
-                        </p>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <h3 style={{ color: 'white' }}>Social App</h3>
-                        <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
-                            Created an app similar to Instagram
-                        </p>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <h3 style={{ color: 'white' }}>OMS</h3>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                                Worked for six months on OMS (Office Management System)
+                            </p>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <h3 style={{ color: 'white' }}>Templates</h3>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                                Developed various templates such as Ecommerce and Real-Estate
+                            </p>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <h3 style={{ color: 'white' }}>Club Management System</h3>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                                Developed a Football and Swimming Club Management System, including team, player, coach, membership, and match management functionalities
+                            </p>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <h3 style={{ color: 'white' }}>Social App</h3>
+                            <p style={{ marginTop: '2px', color: '#d6d5d5' }}>
+                                Created an app similar to Instagram
+                            </p>
                         </Timeline.Item>
                     </Timeline>
                 </div>
@@ -126,9 +126,9 @@ function Resume(props: any) {
                 </div>
             </div>
             <div style={{ marginTop: '30px' }}>
-            <h1>Skills <span style={{ fontWeight: 'normal', fontSize: 'small' }}>(Skills i remember)</span></h1>
+                <h1>Skills <span style={{ fontWeight: 'normal', fontSize: 'small' }}>(Skills i remember)</span></h1>
                 <div style={{ marginTop: '15px' }} className={styles.skillsItem}>
-                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px',flexWrap:'wrap' }} >
+                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px', flexWrap: 'wrap' }} >
                         <div className={styles.skills2} style={{ color: '#f6d36b' }}>
                             <RiJavascriptFill />
                             <h5>JavaScript</h5>
@@ -152,12 +152,6 @@ function Resume(props: any) {
                         <div style={{ color: '#149eca' }} className={styles.skills2}>
                             <Image src={Next} width={50} height={50} alt='' style={{ background: 'white', borderRadius: '30pc', padding: '5px' }} />
                             <h5 style={{ color: 'white' }}>Next Js</h5>
-                        </div>
-                    {/* </div>
-                    <div style={{ textAlign: 'center', display: 'flex', gap: '30px', overflowX: 'auto' }}> */}
-                        <div style={{ color: '#00ba4a' }} className={styles.skills2}>
-                            <SiTypescript />
-                            <h5>Typescript</h5>
                         </div>
                         <div style={{ color: '#008cff' }} className={styles.skills2}>
                             <SiAntdesign />

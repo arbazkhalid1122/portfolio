@@ -9,13 +9,13 @@ import Image from 'next/image';
 function calculateExactAge(birthDate: Date): number {
   const now = new Date();
   const ageInMs = now.getTime() - birthDate.getTime();
-  
-  const ageInYears = ageInMs / (1000 * 60 * 60 * 24 * 365.25); 
+
+  const ageInYears = ageInMs / (1000 * 60 * 60 * 24 * 365.25);
   return ageInYears;
 }
 
 export default function Intro() {
-  const birthDate = new Date(2002, 5, 9); 
+  const birthDate = new Date(2002, 5, 9);
   const [age, setAge] = useState(calculateExactAge(birthDate).toFixed(10));
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Intro() {
       setAge(calculateExactAge(birthDate).toFixed(10));
     }, 1000);
 
-    return () => clearInterval(intervalId); 
+    return () => clearInterval(intervalId);
   }, [birthDate]);
 
   return (
