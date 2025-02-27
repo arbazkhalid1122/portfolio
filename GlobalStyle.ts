@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.cardBackground};
     color: ${(props) => props.theme.text};
   }
+    .container{
+    background-color: ${(props) => props.theme.cardBackground};
+    color: ${(props) => props.theme.text};
+}
   button {
     background-color: ${(props) => props.theme.primary};
     color: ${(props) => props.theme.text};

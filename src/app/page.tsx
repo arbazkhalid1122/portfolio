@@ -44,7 +44,7 @@ export default function Home() {
       </Nav2>
       <Content>
         <Intro />
-        <Container>
+        <Container className='container'>
           <Nav1>
             <NavItem onClick={handleAbout} style={{ cursor: 'pointer', color: showAbout ? '#FFDB70' : '' }}>About</NavItem>
             <NavItem style={{ cursor: 'pointer', color: showResume ? '#FFDB70' : '' }} onClick={handleResume}>
@@ -77,7 +77,6 @@ const Main = styled.div`
   align-items: flex-start;
   padding: 25px;
   min-height: 100vh;
-  bcakground-color: #1e1e1f;
 
   @media (max-width: 500px) {
     padding: 0;
@@ -87,7 +86,6 @@ const Main = styled.div`
 
 
 const Container = styled.div`
-  background-color: #1e1e1f;
   border-radius: 15px;
   padding: 40px;
   width: 70vw;
