@@ -6,10 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.text};
     transition: all 0.3s ease-in-out;
   }
-  .card {
+  .intro {
     background-color: ${(props) => props.theme.cardBackground};
-    padding: 20px;
-    border-radius: 10px;
+    color: ${(props) => props.theme.text};
   }
   button {
     background-color: ${(props) => props.theme.primary};

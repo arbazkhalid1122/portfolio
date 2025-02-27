@@ -30,7 +30,7 @@ export default function Intro() {
 
 
   return (
-    <Intros>
+    <Intros className='intro'>
       <div style={{ textAlign: 'center' }}>
         <Image src={avatar} height={100} width={100} alt={''} style={{ background: '#3c3c3d', borderRadius: '8px' }} />
         <div className='heading'>
@@ -84,8 +84,7 @@ const Intros = styled.div`
   text-align: center;
   border-radius: 15px;
   gap: 50px;
-  background-color: #1e1e1f;
-  height: fit-content;
+ height: fit-content;
   width: 300px;
 
 
