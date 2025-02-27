@@ -75,7 +75,7 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   padding: 25px;
   min-height: 100vh;
 
@@ -119,7 +119,7 @@ export const ContainerItems = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: start;
+  text-align: flex-start;
   gap: 25px;
   
   @media (max-width: 1109px) {

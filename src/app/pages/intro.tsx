@@ -37,7 +37,7 @@ export default function Intro() {
           </p>
         </div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '30px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '30px' }}>
         <div className={styles.iconText}>
           <div><MdOutlineMailOutline /></div>
           <div>
