@@ -89,7 +89,7 @@
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    background-color: black;
+    background-color: #121212;
     color: white;
     font-family: sans-serif;
   }

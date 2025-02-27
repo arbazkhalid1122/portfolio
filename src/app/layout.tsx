@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { ThemeContextProvider } from './ThemeContext'
 
 // const inter = Inter({ subsets: [''] })
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={''}>{children}</body>
+      <body className={''}>
+        <ThemeContextProvider>{children}</ThemeContextProvider>
+      </body>
     </html>
   )
 }

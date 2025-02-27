@@ -5,6 +5,7 @@ import Resume from './pages/Resume/resume'
 import styled from 'styled-components';
 import Portfolio from './pages/portfolio/portfolio'
 import About from './pages/about/about';
+import ThemeSwitcher from './theme/themeSwitcher';
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
@@ -31,6 +32,7 @@ export default function Home() {
 
   return (
     <Main >
+      <ThemeSwitcher />
       <Nav2 >
         <NavItem onClick={handleAbout} style={{ cursor: 'pointer' }} >About</NavItem>
         <NavItem style={{ cursor: 'pointer' }} onClick={handleResume}>
@@ -75,6 +77,7 @@ const Main = styled.div`
   align-items: flex-start;
   padding: 25px;
   min-height: 100vh;
+  bcakground-color: #1e1e1f;
 
   @media (max-width: 500px) {
     padding: 0;
