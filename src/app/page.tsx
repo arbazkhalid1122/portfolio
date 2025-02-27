@@ -3,8 +3,8 @@ import { useState } from 'react'
 import Intro from './pages/intro'
 import Resume from './pages/Resume/resume'
 import styled from 'styled-components';
-import { About } from './pages/about/about'
 import Portfolio from './pages/portfolio/portfolio'
+import About from './pages/about/about';
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
