@@ -68,9 +68,6 @@ export default function Home() {
 }
 
 
-
-
-
 const Main = styled.div`
   display: flex;
   flex-direction: column;
@@ -114,51 +111,6 @@ const Container = styled.div`
   }
 `;
 
-export const ContainerItems = styled.div`
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: flex-start;
-  gap: 25px;
-  
-  @media (max-width: 1109px) {
-    flex-wrap: wrap;
-  }
-`;
-
-export const Skills = styled.div`
-  background-color: #1e1e1f;
-  box-shadow: 0px 1px 7px 1px #0e0e0e;
-  padding: 30px;
-  border-radius: 40px;
-  margin: 10px;
-  flex: 1;
-  width: 30%;
-
-  h2 {
-    margin-top: 15px;
-  }
-  svg {
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (max-width: 800px) {
-    height: 160px;
-    padding: 8px;
-
-    h2 {
-      font-size: 20px;
-      margin-top: 3px;
-    }
-
-    svg {
-      height: 100px;
-      width: 120px;
-    }
-  }
-`;
 
 const Nav1 = styled.nav`
   display: flex;
@@ -200,22 +152,6 @@ const Content = styled.div`
   }
 `;
 
-export const SkillsItem = styled.div`
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-
-  @media (max-width: 800px) {
-    overflow: auto;
-    width: 82vw;
-  }
-
-  @media (max-width: 600px) {
-    width: 100%;
-  }
-`;
-
 
 const Nav2 = styled.div`
   display: none;
@@ -229,32 +165,3 @@ const Nav2 = styled.div`
   border-radius: 19px 22px 0px 0px;
   margin-bottom: -9px;
 `
-
-
-export const ContainerChild = styled.div`
-  background-color: #1e1e1f;
-  box-shadow: 0px 1px 7px 1px #0e0e0e;
-  border-radius: 15px;
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-}
-
-p {
-  margin-top: 5px;
-}
-
-
-@media (max-width: 980px) {
- 
-    width: 100%;
-    padding: 10px;
-}
-
-@media (max-width: 390px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    font-size: 13px;
-    line-height: 18px
-}`
