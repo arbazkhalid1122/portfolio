@@ -118,7 +118,7 @@
   /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  text-align: start;
+  text-align: flex-start;
   gap: 25px;
 
 }
