@@ -6,7 +6,7 @@ import { RiJavascriptFill } from "react-icons/ri"
 import { SiAmp, SiAntdesign, SiApacheecharts, SiApachekafka, SiChakraui, SiMongodb, SiSocketdotio, SiTailwindcss } from "react-icons/si"
 import design from '.././../../../public/icon-design.svg'
 import Next from '.././../../../public/next.svg'
-export const About = () => {
+const About = () => {
     return (
         <div style={{ marginTop: '40px' }}>
             <div style={{ position: 'relative' }}>
@@ -133,3 +133,5 @@ export const About = () => {
         </div>
     )
 }
+
+export default About;
