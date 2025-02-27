@@ -45,7 +45,7 @@ export default function Home() {
       <Content>
         <Intro />
         <Container className='container'>
-          <Nav1>
+          <Nav1 className='nav1'>
             <NavItem onClick={handleAbout} style={{ cursor: 'pointer', color: showAbout ? '#FFDB70' : '' }}>About</NavItem>
             <NavItem style={{ cursor: 'pointer', color: showResume ? '#FFDB70' : '' }} onClick={handleResume}>
               Resume
@@ -116,7 +116,6 @@ const Container = styled.div`
 const Nav1 = styled.nav`
   display: flex;
   gap: 100px;
-  background: rgb(60 60 61);
   margin-left: -39px;
   margin-top: -39px;
   padding: 25px;

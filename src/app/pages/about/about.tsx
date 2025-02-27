@@ -50,14 +50,14 @@ const About = () => {
             <div style={{ marginTop: '30px' }}>
                 <h1>What I'm Doing</h1>
                 <ContainerItems>
-                    <ContainerChild >
+                    <ContainerChild className="containerChild">
                         <div><Image src={design} height={50} width={50} alt='' /></div>
                         <div>
                             <h2>Web Design</h2>
                             <p>The most modern and high-quality design made at a professional level.</p>
                         </div>
                     </ContainerChild>
-                    <ContainerChild >
+                    <ContainerChild className="containerChild">
                         <div><Image src={design} height={50} width={50} alt='' /></div>
                         <div>
                             <h2>Mobile Development</h2>
@@ -71,59 +71,59 @@ const About = () => {
                 <h1>Skills</h1>
                 <div style={{ marginTop: '15px' }}>
                     <SkillsItem>
-                        <Skills style={{ color: '#f6d36b' }}>
+                        <Skills className="skills" >
                             <RiJavascriptFill />
                             <h2>JavaScript</h2>
                         </Skills>
-                        <Skills style={{ color: '#149eca' }} >
+                        <Skills className="skills" style={{ color: '#149eca' }} >
                             <FaReact />
                             <h2>React</h2>
                         </Skills>
-                        <Skills style={{ color: '#f2100c' }} >
+                        <Skills className="skills" style={{ color: '#f2100c' }} >
                             <FaHtml5 />
                             <h2>HTML</h2>
                         </Skills>
-                        <Skills style={{ color: '#0061b8' }} >
+                        <Skills className="skills" style={{ color: '#0061b8' }} >
                             <FaCss3Alt />
                             <h2>CSS</h2>
                         </Skills>
-                        <Skills style={{ color: '#149eca' }} >
+                        <Skills className="skills" style={{ color: '#149eca' }} >
                             <Image src={Next} width={150} height={150} alt='' style={{ background: 'white', borderRadius: '30pc', padding: '5px' }} />
                             <h2 style={{ color: 'white' }}>Next Js</h2>
                         </Skills>
-                        <Skills style={{ color: '#62d746' }} >
+                        <Skills className="skills" style={{ color: '#62d746' }} >
                             <IoLogoNodejs />
                             <h2>Node js</h2>
                         </Skills>
-                        <Skills style={{ color: '#00ba4a' }} >
+                        <Skills className="skills" style={{ color: '#00ba4a' }} >
                             <SiMongodb />
                             <h2>Mongo db</h2>
                         </Skills>
-                        <Skills >
+                        <Skills className="skills">
                             <SiSocketdotio style={{ color: '#010101', }} />
                             <h2>Socket.io</h2>
                         </Skills>
-                        <Skills >
+                        <Skills className="skills">
                             <SiApacheecharts style={{ color: '#ca2c92', }} />
                             <h2>Apache ECharts</h2>
                         </Skills>
-                        <Skills >
+                        <Skills className="skills">
                             <SiApachekafka style={{ color: '#834b59', }} />
                             <h2>Apache Kafka</h2>
                         </Skills>
-                        <Skills >
+                        <Skills className="skills">
                             <SiTailwindcss style={{ color: '#38bdf8', }} />
                             <h2>Tailwind CSS</h2>
                         </Skills>
-                        <Skills>
+                        <Skills className="skills">
                             <SiAntdesign style={{ color: '#0170fe', }} />
                             <h2>Ant Design</h2>
                         </Skills>
-                        <Skills>
+                        <Skills className="skills">
                             <SiChakraui style={{ color: '#319795', }} />
                             <h2>Chakra UI</h2>
                         </Skills>
-                        <Skills>
+                        <Skills className="skills">
                             <SiAmp style={{ color: '#005af0', }} />
                             <h2>AMP</h2>
                         </Skills>
@@ -151,8 +151,6 @@ const ContainerItems = styled.div`
 `;
 
 const Skills = styled.div`
-  background-color: #1e1e1f;
-  box-shadow: 0px 1px 7px 1px #0e0e0e;
   padding: 30px;
   border-radius: 40px;
   margin: 10px;
@@ -201,8 +199,6 @@ const SkillsItem = styled.div`
 
 
 const ContainerChild = styled.div`
-  background-color: #1e1e1f;
-  box-shadow: 0px 1px 7px 1px #0e0e0e;
   border-radius: 15px;
   display: flex;
   gap: 30px;

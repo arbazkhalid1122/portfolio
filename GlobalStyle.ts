@@ -27,4 +27,34 @@ export const GlobalStyle = createGlobalStyle`
   button:hover {
     background-color: ${(props) => props.theme.secondary};
   }
+
+  .iconText {
+background-color: ${(props) => props.theme.cardBackground};
+box-shadow: 0px 1px 7px 1px ${(props) => props.theme.background};
+padding: 10px;
+  }
+
+  .wDeveloper {
+    background-color: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.text};
+    box-shadow: 0px 1px 7px 1px ${(props) => props.theme.background};
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.nav1{
+  background-color: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.text};
+}
+
+.skills{
+  background-color: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.text};
+}
+
+.containerChild{
+    background-color: ${(props) => props.theme.cardBackground};
+  box-shadow: 0px 1px 7px 1px ${(props) => props.theme.background};
+}
 `;

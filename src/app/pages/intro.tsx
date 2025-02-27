@@ -35,37 +35,37 @@ export default function Intro() {
         <Image src={avatar} height={100} width={100} alt={''} style={{ background: '#3c3c3d', borderRadius: '8px' }} />
         <div className='heading'>
           <h1>Arbaz Khalid</h1>
-          <p style={{ marginTop: '5px', background: '#3c3c3d', borderRadius: '8px', padding: '8px' }}>
+          <p className='wDeveloper'>
             Web Developer
           </p>
         </div>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '30px' }}>
-        <IconText >
+        <IconText className='iconText' >
           <div><MdOutlineMailOutline /></div>
           <div>
-            <p style={{ color: 'hsl(0deg 0.42% 46.86%)' }}>Email</p>
+            <p className='introHeading'>Email</p>
             <p>khalidarbaz27@gmail.com</p>
           </div>
         </IconText>
-        <IconText >
+        <IconText className='iconText'>
           <div><SlScreenSmartphone /></div>
           <div>
-            <p style={{ color: 'hsl(0deg 0.42% 46.86%)' }}>Phone</p>
+            <p className='introHeading'>Phone</p>
             <p>03061368797</p>
           </div>
         </IconText>
-        <IconText >
+        <IconText className='iconText'>
           <div><SlCalender /></div>
           <div>
-            <p style={{ color: 'hsl(0deg 0.42% 46.86%)' }}>Age</p>
+            <p className='introHeading'>Age</p>
             <p>{age}</p>
           </div>
         </IconText>
-        <IconText >
+        <IconText className='iconText'>
           <div><VscLocation /></div>
           <div>
-            <p style={{ color: 'hsl(0deg 0.42% 46.86%)' }}>Location</p>
+            <p className='introHeading'>Location</p>
             <p>Bahawalpur</p>
           </div>
         </IconText>
@@ -119,6 +119,8 @@ const Intros = styled.div`
 
 
 const IconText = styled.div`
+width: 100%;
+border-radius: 10px;
 @media (max-width: 980px) {
     font-size: 4vw;
     width: 100%;
@@ -128,15 +130,14 @@ const IconText = styled.div`
   display: flex;
   align-items: center;
   text-align: start;
-  gap: 25px;
+  gap: 10px;
 
  svg {
   width: 40px;
   height: 40px;
   padding: 8px;
   border-radius: 8px;
-  background-color: #1e1e1f;
-  box-shadow: 0px 1px 7px 1px #0e0e0e;
+
 }
 
 @media (max-width: 980px) {
