@@ -10,7 +10,7 @@ import { BsBootstrapFill } from "react-icons/bs"
 import styles from '../../page.module.css'
 const About = () => {
     return (
-        <div style={{ marginTop: '40px' }}>
+        <div>
             <div style={{ position: 'relative' }}>
                 <h1>About Me</h1>
                 <p>

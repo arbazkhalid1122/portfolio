@@ -80,8 +80,7 @@ const ImageCaption = styled.div`
 function Portfolio() {
   return (
     <div>
-      <h1 style={{ marginTop: '30px' }}>Projects</h1>
-
+      <h1>Projects</h1>
       <ImageSet>
         {projects.map((project, index) => (
           <ImageContainer key={index}>

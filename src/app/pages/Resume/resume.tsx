@@ -14,7 +14,7 @@ function Resume(props: any) {
 
     return (
         <div className={styles.resume}>
-            <div style={{ marginTop: '30px' }}>
+            <div>
                 <h1>Resume</h1>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '30px' }}>
                     <div className="cllaaa">
