@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.text};
   }
   button {
-    background-color: ${(props) => props.theme.primary};
+    background-color: ${(props) => props.theme.cardBackground};
     color: ${(props) => props.theme.text};
     border: none;
     padding: 10px 20px;
@@ -24,9 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 5px;
     transition: 0.3s;
   }
-  button:hover {
-    background-color: ${(props) => props.theme.secondary};
-  }
+ 
 
   .iconText {
     background-color: ${(props) => props.theme.cardBackground};
@@ -71,6 +69,9 @@ export const GlobalStyle = createGlobalStyle`
    h1, h2, h3, h4, h5, h6 {
     color: ${(props) => props.theme.heading};
   }
+    p, span, li{
+    color: ${(props) => props.theme.text};
+    }
 
-
+ 
 `;

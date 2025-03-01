@@ -12,7 +12,7 @@ const ThemeSwitcher = () => {
             <GlobalStyle />
             <div>
                 <h1>Theme Switcher</h1>
-                {["dark", "cyberpunk", "minimalist", "light", "sunset"].map((themeKey) => (
+                {["dark", "minimalist", "light", "sunset", "pastel", "classic", "sky", "warmGlow"].map((themeKey) => (
                     <button key={themeKey} onClick={() => toggleTheme(themeKey)}>
                         {themeKey.charAt(0).toUpperCase() + themeKey.slice(1)}
                     </button>

@@ -73,47 +73,47 @@ const About = () => {
                 <h1>Skills <span style={{ fontWeight: 'normal', fontSize: 'small' }}>(Skills i remember)</span></h1>
                 <div style={{ marginTop: '15px' }} className={styles.skillsItem}>
                     <div style={{ textAlign: 'center', display: 'flex', gap: '25px', flexWrap: 'wrap' }} >
-                        <div className={`skills ${styles.skills2}`} style={{}}>
+                        <div className={`skills ${styles.skills2}`} style={{ color: '#f6d36b' }}>
                             <RiJavascriptFill />
                             <h5>JavaScript</h5>
                         </div>
-                        <div style={{}} className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#2e5fc2' }} className={`skills ${styles.skills2}`}>
                             <SiTypescript />
                             <h5>Typescript</h5>
                         </div>
-                        <div style={{}} className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#f2100c' }} className={`skills ${styles.skills2}`}>
                             <FaHtml5 />
                             <h5>HTML</h5>
                         </div>
-                        <div style={{}} className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#0061b8' }} className={`skills ${styles.skills2}`}>
                             <FaCss3Alt />
                             <h5>CSS</h5>
                         </div>
-                        <div style={{}} className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#149eca' }} className={`skills ${styles.skills2}`}>
                             <FaReact />
                             <h5>React</h5>
                         </div>
-                        <div style={{}} className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#149eca' }} className={`skills ${styles.skills2}`}>
                             <Image src={Next} width={50} height={50} alt='' style={{ background: 'white', borderRadius: '30pc', padding: '5px' }} />
-                            <h5 >Next Js</h5>
+                            <h5 style={{ color: 'white' }}>Next Js</h5>
                         </div>
-                        <div className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#008cff' }} className={`skills ${styles.skills2}`}>
                             <SiAntdesign />
                             <h5>Antd</h5>
                         </div>
-                        <div className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#8f00ef' }} className={`skills ${styles.skills2}`}>
                             <BsBootstrapFill />
                             <h5>Bootstrap</h5>
                         </div>
-                        <div className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#00b2d0' }} className={`skills ${styles.skills2}`}>
                             <SiTailwindcss />
                             <h5>Tailwand</h5>
                         </div>
-                        <div className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#48de21' }} className={`skills ${styles.skills2}`}>
                             <IoLogoNodejs />
                             <h5>Node js</h5>
                         </div>
-                        <div className={`skills ${styles.skills2}`}>
+                        <div style={{ color: '#00ba4a' }} className={`skills ${styles.skills2}`}>
                             <SiMongodb />
                             <h5>Mongo db</h5>
                         </div>
