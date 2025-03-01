@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import styles from '../page.module.css';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { VscLocation } from 'react-icons/vsc';
@@ -6,6 +6,7 @@ import { SlCalender, SlScreenSmartphone } from 'react-icons/sl';
 import avatar from '../../../public/myImg.jpeg';
 import Image from 'next/image';
 import styled from 'styled-components';
+import { ThemeContext } from '../ThemeContext';
 
 function calculateExactAge(birthDate: Date): number {
   const now = new Date();
@@ -40,7 +41,7 @@ export default function Intro() {
           </p>
         </div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '30px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px' }}>
         <IconText className='iconText' >
           <div><MdOutlineMailOutline /></div>
           <div>

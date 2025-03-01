@@ -2,16 +2,18 @@ import Image from "next/image"
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa"
 import { IoLogoNodejs } from "react-icons/io"
 import { RiJavascriptFill } from "react-icons/ri"
-import { SiAmp, SiAntdesign, SiApacheecharts, SiApachekafka, SiChakraui, SiMongodb, SiSocketdotio, SiTailwindcss } from "react-icons/si"
+import { SiAntdesign, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si"
 import design from '.././../../../public/icon-design.svg'
 import Next from '.././../../../public/next.svg'
 import styled from "styled-components"
+import { BsBootstrapFill } from "react-icons/bs"
+import styles from '../../page.module.css'
 const About = () => {
     return (
         <div style={{ marginTop: '40px' }}>
             <div style={{ position: 'relative' }}>
                 <h1>About Me</h1>
-                <p style={{ color: 'rgb(185 182 182)' }}>
+                <p>
                     <strong>Code. Tea. Conquer.</strong><br />
                     As a MERN stack developer, I'm like a master chef - but instead of whipping up soufflés, I serve up scalable, secure, and ridiculously fast web applications. With a dash of creativity, a pinch of problem-solving, and a whole lot of caffeine, I transform complex ideas into intuitive user experiences.<br /><br />
                     <em>'Code is like humor - when you have to explain it, it's bad.'</em> I believe in writing clean, efficient, and well-documented code that speaks for itself.<br /><br />
@@ -68,66 +70,54 @@ const About = () => {
             </div>
 
             <div style={{ marginTop: '30px' }}>
-                <h1>Skills</h1>
-                <div style={{ marginTop: '15px' }}>
-                    <SkillsItem>
-                        <Skills className="skills" >
+                <h1>Skills <span style={{ fontWeight: 'normal', fontSize: 'small' }}>(Skills i remember)</span></h1>
+                <div style={{ marginTop: '15px' }} className={styles.skillsItem}>
+                    <div style={{ textAlign: 'center', display: 'flex', gap: '25px', flexWrap: 'wrap' }} >
+                        <div className={`skills ${styles.skills2}`} style={{}}>
                             <RiJavascriptFill />
-                            <h2>JavaScript</h2>
-                        </Skills>
-                        <Skills className="skills" style={{ color: '#149eca' }} >
-                            <FaReact />
-                            <h2>React</h2>
-                        </Skills>
-                        <Skills className="skills" style={{ color: '#f2100c' }} >
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div style={{}} className={`skills ${styles.skills2}`}>
+                            <SiTypescript />
+                            <h5>Typescript</h5>
+                        </div>
+                        <div style={{}} className={`skills ${styles.skills2}`}>
                             <FaHtml5 />
-                            <h2>HTML</h2>
-                        </Skills>
-                        <Skills className="skills" style={{ color: '#0061b8' }} >
+                            <h5>HTML</h5>
+                        </div>
+                        <div style={{}} className={`skills ${styles.skills2}`}>
                             <FaCss3Alt />
-                            <h2>CSS</h2>
-                        </Skills>
-                        <Skills className="skills" style={{ color: '#149eca' }} >
-                            <Image src={Next} width={150} height={150} alt='' style={{ background: 'white', borderRadius: '30pc', padding: '5px' }} />
-                            <h2 style={{ color: 'white' }}>Next Js</h2>
-                        </Skills>
-                        <Skills className="skills" style={{ color: '#62d746' }} >
+                            <h5>CSS</h5>
+                        </div>
+                        <div style={{}} className={`skills ${styles.skills2}`}>
+                            <FaReact />
+                            <h5>React</h5>
+                        </div>
+                        <div style={{}} className={`skills ${styles.skills2}`}>
+                            <Image src={Next} width={50} height={50} alt='' style={{ background: 'white', borderRadius: '30pc', padding: '5px' }} />
+                            <h5 >Next Js</h5>
+                        </div>
+                        <div className={`skills ${styles.skills2}`}>
+                            <SiAntdesign />
+                            <h5>Antd</h5>
+                        </div>
+                        <div className={`skills ${styles.skills2}`}>
+                            <BsBootstrapFill />
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <div className={`skills ${styles.skills2}`}>
+                            <SiTailwindcss />
+                            <h5>Tailwand</h5>
+                        </div>
+                        <div className={`skills ${styles.skills2}`}>
                             <IoLogoNodejs />
-                            <h2>Node js</h2>
-                        </Skills>
-                        <Skills className="skills" style={{ color: '#00ba4a' }} >
+                            <h5>Node js</h5>
+                        </div>
+                        <div className={`skills ${styles.skills2}`}>
                             <SiMongodb />
-                            <h2>Mongo db</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiSocketdotio style={{ color: '#010101', }} />
-                            <h2>Socket.io</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiApacheecharts style={{ color: '#ca2c92', }} />
-                            <h2>Apache ECharts</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiApachekafka style={{ color: '#834b59', }} />
-                            <h2>Apache Kafka</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiTailwindcss style={{ color: '#38bdf8', }} />
-                            <h2>Tailwind CSS</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiAntdesign style={{ color: '#0170fe', }} />
-                            <h2>Ant Design</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiChakraui style={{ color: '#319795', }} />
-                            <h2>Chakra UI</h2>
-                        </Skills>
-                        <Skills className="skills">
-                            <SiAmp style={{ color: '#005af0', }} />
-                            <h2>AMP</h2>
-                        </Skills>
-                    </SkillsItem>
+                            <h5>Mongo db</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,52 +140,6 @@ const ContainerItems = styled.div`
   }
 `;
 
-const Skills = styled.div`
-  padding: 30px;
-  border-radius: 40px;
-  margin: 10px;
-  flex: 1;
-  width: 30%;
-
-  h2 {
-    margin-top: 15px;
-  }
-  svg {
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (max-width: 800px) {
-    height: 160px;
-    padding: 8px;
-
-    h2 {
-      font-size: 20px;
-      margin-top: 3px;
-    }
-
-    svg {
-      height: 100px;
-      width: 120px;
-    }
-  }
-`;
-
-const SkillsItem = styled.div`
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-
-  @media (max-width: 800px) {
-    overflow: auto;
-    width: 82vw;
-  }
-
-  @media (max-width: 600px) {
-    width: 100%;
-  }
-`;
 
 
 const ContainerChild = styled.div`

@@ -5,13 +5,18 @@ import { ThemeProvider } from "styled-components";
 
 
 
-export const themes: Record<any, { background: string; cardBackground: string; primary: string; secondary: string; text: string }> = {
+export const themes: Record<
+    string,
+    { background: string; cardBackground: string; primary: string; secondary: string; text: string; heading: string; navActive: string }
+> = {
     dark: {
         background: "#121212",
         cardBackground: "#1E1E1E",
         primary: "#FFD700",
         secondary: "#FF6347",
         text: "#FFFFFF",
+        heading: "#FFD700",
+        navActive: "#FFD700",
     },
     cyberpunk: {
         background: "#0D0D0D",
@@ -19,6 +24,8 @@ export const themes: Record<any, { background: string; cardBackground: string; p
         primary: "#FF00FF",
         secondary: "#00FFFF",
         text: "#EAEAEA",
+        heading: "#FF00FF",
+        navActive: "#FF00FF",
     },
     minimalist: {
         background: "#181818",
@@ -26,6 +33,8 @@ export const themes: Record<any, { background: string; cardBackground: string; p
         primary: "#76ABAE",
         secondary: "#EEEEEE",
         text: "#F1F1F1",
+        heading: "#76ABAE",
+        navActive: "#76ABAE",
     },
     light: {
         background: "#F5F5F5",
@@ -33,6 +42,8 @@ export const themes: Record<any, { background: string; cardBackground: string; p
         primary: "#3498db",
         secondary: "#2ecc71",
         text: "#333333",
+        heading: "#2C3E50",
+        navActive: "#3498db",
     },
     sunset: {
         background: "#2E1A47",
@@ -40,6 +51,8 @@ export const themes: Record<any, { background: string; cardBackground: string; p
         primary: "#E74C3C",
         secondary: "#F39C12",
         text: "#FFFFFF",
+        heading: "#E74C3C",
+        navActive: "#E74C3C",
     },
 };
 
