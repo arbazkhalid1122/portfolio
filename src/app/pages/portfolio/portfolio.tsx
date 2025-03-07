@@ -4,6 +4,7 @@ import { styled } from 'styled-components';
 import dashboard from '../../../../public/cogplay-1.png';
 import ecommerce from '../../../../public/Office Mangment Systyem-1.png';
 import oono from '../../../../public/oono.png';
+import oonoAdmin from '../../../../public/oono-admin.png';
 import chatbot from '../../../../public/chatbot.png';
 
 
@@ -12,7 +13,13 @@ const projects = [
     src: oono,
     alt: 'Oono',
     name: 'Oono',
-    link: 'https://staging-brand.oono.ai/task-oono-new'
+    link: 'https://staging-brand.oono.ai'
+  },
+  {
+    src: oonoAdmin,
+    alt: 'Oono admin',
+    name: 'Oono admin',
+    link: 'https://staging-app.oono.ai'
   },
   {
     src: project,

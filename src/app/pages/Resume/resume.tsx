@@ -52,6 +52,42 @@ function Resume(props: any) {
                         </Timeline.Item>
                     </Timeline>
                 </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '30px' }} className={styles.resumeHead}>
+                    <div>
+                        {/* <AiOutlineTrophy /> */}
+                    </div>
+                    <div>
+                        <h2>Certifications & Awards</h2>
+                    </div>
+                </div>
+                <div className={styles.education}>
+                    <Timeline className={styles.timeline}>
+                        <Timeline.Item>
+                            <h3>JS HackerRank Certificate</h3>
+                            <p style={{ marginTop: '2px', }}>
+                                Certified in JavaScript from HackerRank
+                            </p>
+                            <p style={{ marginTop: '2px' }}>
+                                <a href="https://www.hackerrank.com/certificates/606422cbd4d8" target="_blank" rel="noopener noreferrer">
+                                    View Certificate
+                                </a>
+                            </p>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <h3>ReactJS HackerRank Certificate</h3>
+                            <p style={{ marginTop: '2px', }}>
+                                Certified in JavaScript from HackerRank
+                            </p>
+                            <p style={{ marginTop: '2px' }}>
+                                <a href="https://www.hackerrank.com/certificates/e407aefa2d47" target="_blank" rel="noopener noreferrer">
+                                    View Certificate
+                                </a>
+                            </p>
+                        </Timeline.Item>
+                    </Timeline>
+                </div>
+
                 <div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '30px' }} className={styles.resumeHead}>
