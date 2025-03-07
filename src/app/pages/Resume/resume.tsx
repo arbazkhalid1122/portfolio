@@ -8,6 +8,7 @@ import { IoLogoNodejs } from "react-icons/io"
 import { SiAntdesign, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si"
 import Next from '.././../../../public/next.svg'
 import Image from 'next/image'
+import { FaAward } from "react-icons/fa6";
 
 function Resume(props: any) {
 
@@ -54,8 +55,9 @@ function Resume(props: any) {
                 </div>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '40px', marginTop: '30px' }} className={styles.resumeHead}>
-                    <div>
-                        {/* <AiOutlineTrophy /> */}
+                    <div className="cllaaa">
+                        <FaAward />
+
                     </div>
                     <div>
                         <h2>Certifications & Awards</h2>

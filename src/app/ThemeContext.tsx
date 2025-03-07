@@ -55,14 +55,7 @@ export const themes: Record<
         text: "#1565C0",
         heading: "#0D47A1",
         navActive: "#1976D2",
-    },
-    warmGlow: {
-        background: "#FFF3E0",
-        cardBackground: "#FFCCBC",
-        text: "#BF360C",
-        heading: "#D84315",
-        navActive: "#FF7043",
-    },
+    }
 };
 
 
